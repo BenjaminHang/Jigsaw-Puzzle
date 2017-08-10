@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Jigsaw-Puzzle</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="jigsaw_demo">
+<div class="header">
+    <div class="title">
+        <ul>
+           <li>Jigsaw Puzzle</li>
+        </ul>
+    </div>
+    <div class="jigsaw_origin">
+        <ul>
+        </ul>
+    </div>
+</div>
+    <div class="jigsaw_content">
+        <ul>
+	      <li></li>
+        </ul>
+        <span>Congratulation!!!</span>
+    </div>
+</div>
+<div class="jigsaw_start"><button>Start</button></div>
+
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/jigsaw.js"></script>
+<script type="text/javascript">
+	new Jigsaw({
+		jOrigin : '.jigsaw_origin',
+		jContent : '.jigsaw_content',
+		jStart : '.jigsaw_start',
+	})
+</script>
+</body>
+</html>
