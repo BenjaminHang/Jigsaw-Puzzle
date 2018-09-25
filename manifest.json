@@ -1,0 +1,16 @@
+{
+    "name": "Jigsaw Puzzle",
+    "short_name": "Jigsaw",
+    "display": "standalone",
+    "scope": "./",
+    "start_url": "./index.html",
+    "theme_color": "#8888ff",
+    "background_color": "#aaaaff",
+    "icons": [
+        {
+            "src": "/static/img/favicon.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        }
+    ]
+}

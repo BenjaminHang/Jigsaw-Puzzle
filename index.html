@@ -2,9 +2,14 @@
 <html>
 <head>
     <meta charset="utf-8">
-	<title>Jigsaw-Puzzle</title>
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jigsaw-Puzzle</title>
+    <link rel=manifest href="./manifest.json">
+    <link rel="shortcut icon" href="./static/img/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="./static/css/reset.css">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <script src="./static/js/jquery-3.2.1.min.js"></script>
 </head>
 <body>
 <div class="jigsaw_demo">
@@ -28,14 +33,25 @@
 </div>
 <div class="jigsaw_start"><button>Start</button></div>
 
-<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="js/jigsaw.js"></script>
+<script src="./static/js/jigsaw.js"></script>
 <script type="text/javascript">
-	new Jigsaw({
+	var jigsaw = new Jigsaw({
 		jOrigin : '.jigsaw_origin',
 		jContent : '.jigsaw_content',
-		jStart : '.jigsaw_start',
-	})
+        jStart : '.jigsaw_start',
+        images: [
+            './static/img/darksiders-1.jpg',
+            './static/img/darksiders-2.jpg',
+            './static/img/dead-cell.jpg',
+            './static/img/stardew-valley.jpg',
+        ]
+    })
+    
+    if(navigator.serviceWorker){
+        navigator.serviceWorker.register('./sw.js')
+        .then(registeration => console.log(registeration))
+        .catch(err => console.log(err))
+    }
 </script>
 </body>
 </html>

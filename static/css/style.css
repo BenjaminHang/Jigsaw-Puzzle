@@ -1,0 +1,79 @@
+body{
+	background: rgba(150,50,0,0.5);
+}
+.jigsaw_demo{
+			border: 2px solid red;
+			width: 600px;
+			margin: 40px auto 0px auto;
+			text-align: center;			
+		}
+		.header{
+			//border: 1px solid red;
+			background: rgba(100,100,100,0.8);	
+		}
+		.title{
+			//border: 1px solid red;
+			font: 30px/2 'Microsoft Yahei';
+			color: rgba(255,255,0,1);
+			border-bottom: 2px solid red;
+			background: rgba(100,100,100,0.8);
+		}
+		.jigsaw_origin{
+			border-bottom: 3px solid red;
+			height: 150px;
+			background: rgba(50,200,100,0.8);
+		}	
+		.jigsaw_origin ul li{
+			//background-image: url(../img/1.jpg);
+			background-size: 100% 100%;
+			width: 144px;
+			height: 144px;
+			float: left;
+			border: 3px solid rgba(0,0,255,0.0);
+			cursor: pointer;
+			background-repeat: no-repeat;	
+		}
+		.jigsaw_origin ul .active{
+            border-color: rgba(0,0,255,1.0);
+		}
+		.jigsaw_content{
+			//border-bottom: 3px solid red;
+			background: rgba(200,200,0,0.6);
+			width: 600px;
+			height: 600px;	
+			position: relative;
+		}
+		.jigsaw_content span{
+			display: block;
+			position: absolute;
+			width: 100%;
+			text-align: center;
+			//border : 1px solid red;
+			font-size: 60px;
+			top: 270px;
+			color: rgba(255,20,255,1.0);
+			display: none;
+		}
+		.jigsaw_content ul li{			
+			float: left;
+			width: 144px;
+			height: 144px;
+			margin: 3px;
+			//background-image: url(../img/1.jpg);
+		}
+		.jigsaw_start{
+			height: 100px;
+			width: 600px;
+            margin: 0 auto;
+			//background: rgba(10,100,100,1.0);
+			text-align: center;
+			
+		}
+		.jigsaw_start button{
+			height: 70px;
+			width: 70px;
+			border-radius: 50%;
+			background: rgba(10,100,100,0.9);
+            font-size: 25px;
+            cursor: pointer;
+		}
